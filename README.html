@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+  <TITLE>README.html</TITLE>
+</HEAD>
+<BODY style="font-family: Arial">
+
+<h1>Markdown to HTML Converter</h1><hr>
+
+<p>This script uses the standard 'markdown' application, but then makes additional changes to make the HTML look better.</p>
+
+<h1>Installation</h1><hr>
+
+<ul>
+<li>Install the markdown application</li>
+</ul>
+
+<pre style="background-color: #F6F8FA">
+$ sudo apt install markdown
+</pre>
+
+<ul>
+<li>Clone this repository</li>
+</ul>
+
+<pre style="background-color: #F6F8FA">
+$ git clone https://github.com/seebe/md2html
+</pre>
+
+<ul>
+<li>Add an alias to your login script to make it easier to run.</li>
+</ul>
+
+<pre style="background-color: #F6F8FA">
+$ cd md2html
+$ echo "alias md2html='$PWD/md2html.sh'" >> ~/.bashrc
+</pre>
+
+<ul>
+<li>Note that after you add this alias, you will need to open a new terminal window for this to start working (because that is when .bashrc is read). This also means for any terminal window that currently open, this alias will not work yet. However, you can simply enter "source ~/.bashrc" in any open terminal window to re-read in your update bashrc file with your new alias.</li>
+</ul>
+
+<h1>Usage</h1><hr>
+
+<ul>
+<li>Enter the filename of the .md file you would like to convert.</li>
+<li>The output file .html will be created.</li>
+<li>If no filename is passed, "README.md" will be assumed (since that file is common in github repositories)</li>
+</ul>
+
+<pre style="background-color: #F6F8FA"> 
+$ md2html README.md
+</pre>
+
+<h1>Notes</h1><hr>
+
+<ul>
+<li>★ Alwasy check your html file in the broswer to make sure it looks OK.</li>
+<li>Note that the way github displays .md files online is different than how the markdown app converts them. Below are some tips:
+<ul>
+<li>Always use &lt; pre> for code blocks (not a leading space)</li>
+</ul></li>
+</ul>
+
+</BODY>
+</HTML>
+
